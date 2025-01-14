@@ -9,6 +9,8 @@ from aiogram.types import BotCommand, BotCommandScopeAllPrivateChats, Message
 from dotenv import load_dotenv, find_dotenv
 from loguru import logger
 
+from database.engine import drop_db, create_db
+
 # Loading environment variables
 load_dotenv(find_dotenv())
 
@@ -34,6 +36,20 @@ async def set_default_commands():
     await bot.set_my_commands(commands, BotCommandScopeAllPrivateChats())
 
 
+async def on_startup():
+    """The function is performed on bot startup"""
+    await set_default_commands()
+    # Deleting pending updates on bot startup
+    await bot.delete_webhook(drop_pending_updates=True)
+
+    run_param = False
+    if run_param:
+        await drop_db()
+    await create_db()
+
+    logger.info('Bot started successfully!')
+
+
 @dp.message(CommandStart())
 async def start_command(message: Message):
     logger.debug(f'User with telegram_id={message.from_user.id} used command /start')
@@ -42,11 +58,8 @@ async def start_command(message: Message):
 
 async def main():
     configure_logger('DEBUG')
-    await set_default_commands()
 
-    # Deleting pending updates on bot startup
-    await bot.delete_webhook(drop_pending_updates=True)
-
+    dp.startup.register(on_startup)
     await dp.start_polling(bot, allowed_updates=dp.resolve_used_update_types())
 
 
@@ -56,4 +69,4 @@ if __name__ == '__main__':
     except (SystemExit, KeyboardInterrupt):
         logger.critical('Bot stopped!')
     except Exception as e:
-        logger.critical(f'Bot stopped: {e}')
+        logger.critical(f'Bot stopped with exception: {e}')
