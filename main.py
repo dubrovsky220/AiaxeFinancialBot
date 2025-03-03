@@ -10,13 +10,17 @@ from dotenv import load_dotenv, find_dotenv
 from loguru import logger
 
 from database.engine import drop_db, create_db
+from handlers.command_handlers import commands_handlers_router
 
 # Loading environment variables
 load_dotenv(find_dotenv())
 
-# Initializing Bot abd Dispatcher
+# Initializing Bot and Dispatcher
 bot = Bot(token=os.getenv('BOT_TOKEN'), default=DefaultBotProperties(parse_mode='HTML'))
 dp = Dispatcher(storage=MemoryStorage())
+
+# Registering router handling user commands
+dp.include_router(commands_handlers_router)
 
 
 def configure_logger(level: str):
@@ -48,12 +52,6 @@ async def on_startup():
     await create_db()
 
     logger.info('Bot started successfully!')
-
-
-@dp.message(CommandStart())
-async def start_command(message: Message):
-    logger.debug(f'User with telegram_id={message.from_user.id} used command /start')
-    await message.answer(f'Hello, {message.from_user.first_name}')
 
 
 async def main():
