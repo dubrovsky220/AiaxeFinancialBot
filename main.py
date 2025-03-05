@@ -9,8 +9,9 @@ from aiogram.types import BotCommand, BotCommandScopeAllPrivateChats, Message
 from dotenv import load_dotenv, find_dotenv
 from loguru import logger
 
-from database.engine import drop_db, create_db
+from database.engine import drop_db, create_db, session_maker
 from handlers.command_handlers import commands_handlers_router
+from middlewares.db_session import DataBaseSession
 
 # Loading environment variables
 load_dotenv(find_dotenv())
@@ -21,6 +22,9 @@ dp = Dispatcher(storage=MemoryStorage())
 
 # Registering router handling user commands
 dp.include_router(commands_handlers_router)
+
+# Registering middleware for providing  database session
+dp.update.middleware(DataBaseSession(session_pool=session_maker))
 
 
 def configure_logger(level: str):
