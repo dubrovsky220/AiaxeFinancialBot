@@ -3,14 +3,14 @@ import os
 
 from aiogram import Bot, Dispatcher
 from aiogram.client.default import DefaultBotProperties
-from aiogram.filters import CommandStart
 from aiogram.fsm.storage.memory import MemoryStorage
-from aiogram.types import BotCommand, BotCommandScopeAllPrivateChats, Message
+from aiogram.types import BotCommand, BotCommandScopeAllPrivateChats
 from dotenv import load_dotenv, find_dotenv
 from loguru import logger
 
 from database.engine import drop_db, create_db, session_maker
 from handlers.command_handlers import commands_handlers_router
+from handlers.state_machines import state_machines_router
 from middlewares.db_session import DataBaseSession
 
 # Loading environment variables
@@ -21,6 +21,7 @@ bot = Bot(token=os.getenv('BOT_TOKEN'), default=DefaultBotProperties(parse_mode=
 dp = Dispatcher(storage=MemoryStorage())
 
 # Registering router handling user commands
+dp.include_router(state_machines_router)
 dp.include_router(commands_handlers_router)
 
 # Registering middleware for providing  database session

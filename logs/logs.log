@@ -51,3 +51,445 @@
 2025-03-05 at 20:47:28 | DEBUG | User with telegram_id=755919498 clicked menu button
 2025-03-05 at 20:47:32 | DEBUG | User with telegram_id=755919498 clicked menu button
 2025-03-05 at 20:48:23 | CRITICAL | Bot stopped!
+2025-03-17 at 19:24:23 | INFO | Bot started successfully!
+2025-03-17 at 19:24:41 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-17 at 19:24:41 | DEBUG | User with telegram_id=755919498 added to Users
+2025-03-17 at 19:27:11 | CRITICAL | Bot stopped!
+2025-03-17 at 19:28:33 | INFO | Bot started successfully!
+2025-03-17 at 19:28:39 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-17 at 19:28:39 | DEBUG | User with telegram_id=755919498 added to Users
+2025-03-17 at 19:28:39 | DEBUG | (<database.model.User object at 0x0000019856344E90>,)
+2025-03-17 at 19:28:39 | ERROR | Error when adding default categories of incomes and expenses: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.DataError'>: invalid input for query argument $4: (<database.model.User object at 0x000001... ('Row' object cannot be interpreted as an integer)
+[SQL: INSERT INTO category_expense (name, "limit", is_active, user_id) SELECT p0::VARCHAR, p1::NUMERIC(10, 2), p2::BOOLEAN, p3::INTEGER FROM (VALUES ($1::VARCHAR, $2::NUMERIC(10, 2), $3::BOOLEAN, $4::INTEGER, 0), ($5::VARCHAR, $6::NUMERIC(10, 2), $7::BOOLE ... 176 characters truncated ... 2, p3, sen_counter) ORDER BY sen_counter RETURNING category_expense.id, category_expense.id AS id__1]
+[parameters: ('Продукты', 0, True, (<database.model.User object at 0x0000019856344E90>,), 'ЖКХ', 0, True, (<database.model.User object at 0x0000019856344E90>,), 'Лекарства', 0, True, (<database.model.User object at 0x0000019856344E90>,), 'Отдых', 0, True, (<database.model.User object at 0x0000019856344E90>,))]
+(Background on this error at: https://sqlalche.me/e/20/dbapi)
+2025-03-17 at 19:29:45 | CRITICAL | Bot stopped!
+2025-03-17 at 19:30:16 | INFO | Bot started successfully!
+2025-03-17 at 19:30:19 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-17 at 19:30:19 | DEBUG | User with telegram_id=755919498 added to Users
+2025-03-17 at 19:30:54 | CRITICAL | Bot stopped!
+2025-03-17 at 19:33:19 | INFO | Bot started successfully!
+2025-03-17 at 19:33:25 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-17 at 19:33:25 | DEBUG | User with telegram_id=755919498 added to Users
+2025-03-17 at 19:33:25 | DEBUG | <database.model.User object at 0x000001C2FD2FC350>
+2025-03-17 at 19:34:11 | CRITICAL | Bot stopped!
+2025-03-17 at 19:34:25 | INFO | Bot started successfully!
+2025-03-17 at 19:34:30 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-17 at 19:34:30 | DEBUG | User with telegram_id=755919498 added to Users
+2025-03-17 at 19:34:30 | DEBUG | <database.model.User object at 0x00000221E9BE5950>
+2025-03-17 at 19:34:30 | DEBUG | Default categories of incomes and expenses were added to user with telegram_id=755919498
+2025-03-17 at 19:35:17 | CRITICAL | Bot stopped!
+2025-03-17 at 19:44:38 | INFO | Bot started successfully!
+2025-03-17 at 19:44:44 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-17 at 19:44:44 | DEBUG | User with telegram_id=755919498 added to Users
+2025-03-17 at 19:44:44 | ERROR | Error when adding default categories of incomes and expenses: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.DataError'>: invalid input for query argument $4: <database.model.User object at 0x000001A... ('User' object cannot be interpreted as an integer)
+[SQL: INSERT INTO category_expense (name, "limit", is_active, user_id) SELECT p0::VARCHAR, p1::NUMERIC(10, 2), p2::BOOLEAN, p3::INTEGER FROM (VALUES ($1::VARCHAR, $2::NUMERIC(10, 2), $3::BOOLEAN, $4::INTEGER, 0), ($5::VARCHAR, $6::NUMERIC(10, 2), $7::BOOLE ... 176 characters truncated ... 2, p3, sen_counter) ORDER BY sen_counter RETURNING category_expense.id, category_expense.id AS id__1]
+[parameters: ('Продукты', 0, True, <database.model.User object at 0x000001AA36B1C910>, 'ЖКХ', 0, True, <database.model.User object at 0x000001AA36B1C910>, 'Лекарства', 0, True, <database.model.User object at 0x000001AA36B1C910>, 'Отдых', 0, True, <database.model.User object at 0x000001AA36B1C910>)]
+(Background on this error at: https://sqlalche.me/e/20/dbapi)
+2025-03-17 at 19:46:27 | CRITICAL | Bot stopped!
+2025-03-17 at 19:48:51 | INFO | Bot started successfully!
+2025-03-17 at 19:48:54 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-17 at 19:48:54 | DEBUG | User with telegram_id=755919498 added to Users
+2025-03-17 at 19:48:54 | DEBUG | Default categories of incomes and expenses were added to user with telegram_id=755919498
+2025-03-17 at 19:49:50 | CRITICAL | Bot stopped!
+2025-03-17 at 20:31:22 | INFO | Bot started successfully!
+2025-03-17 at 20:32:00 | CRITICAL | Bot stopped!
+2025-03-17 at 20:32:53 | INFO | Bot started successfully!
+2025-03-17 at 20:32:55 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-17 at 20:32:55 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-17 at 20:33:37 | CRITICAL | Bot stopped!
+2025-03-17 at 20:49:13 | INFO | Bot started successfully!
+2025-03-17 at 20:49:20 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-17 at 20:49:20 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-17 at 20:49:25 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-17 at 20:49:25 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-17 at 20:49:26 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-17 at 20:49:27 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-17 at 20:49:28 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-17 at 20:49:30 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-17 at 20:50:15 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-17 at 20:50:15 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-17 at 20:50:16 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-17 at 20:50:17 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-17 at 20:50:18 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-17 at 20:50:18 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-17 at 20:50:20 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-17 at 20:50:21 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-17 at 20:53:33 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-17 at 20:53:33 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-17 at 20:53:34 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-17 at 20:53:40 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-17 at 20:53:50 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-17 at 20:53:50 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-17 at 20:53:51 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-17 at 20:54:33 | CRITICAL | Bot stopped!
+2025-03-18 at 17:24:03 | INFO | Bot started successfully!
+2025-03-18 at 17:24:22 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-18 at 17:24:22 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-18 at 17:25:43 | CRITICAL | Bot stopped!
+2025-03-18 at 17:45:54 | INFO | Bot started successfully!
+2025-03-18 at 17:45:59 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-18 at 17:45:59 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-18 at 17:47:08 | CRITICAL | Bot stopped!
+2025-03-18 at 17:47:28 | INFO | Bot started successfully!
+2025-03-18 at 17:47:32 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-18 at 17:47:32 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-18 at 17:49:01 | CRITICAL | Bot stopped!
+2025-03-18 at 17:50:10 | INFO | Bot started successfully!
+2025-03-18 at 17:51:02 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-18 at 17:51:02 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-18 at 17:52:20 | CRITICAL | Bot stopped!
+2025-03-18 at 17:55:02 | INFO | Bot started successfully!
+2025-03-18 at 17:55:05 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-18 at 17:55:05 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-18 at 17:56:35 | DEBUG | 45.0
+2025-03-18 at 17:56:52 | CRITICAL | Bot stopped!
+2025-03-18 at 17:56:57 | INFO | Bot started successfully!
+2025-03-18 at 17:57:14 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-18 at 17:57:14 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-18 at 17:58:35 | CRITICAL | Bot stopped!
+2025-03-18 at 17:58:58 | INFO | Bot started successfully!
+2025-03-18 at 17:59:04 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-18 at 17:59:04 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-18 at 17:59:26 | DEBUG | 25.0
+2025-03-18 at 18:03:09 | CRITICAL | Bot stopped!
+2025-03-18 at 18:08:40 | INFO | Bot started successfully!
+2025-03-18 at 18:08:43 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-18 at 18:08:43 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-18 at 18:09:01 | DEBUG | 25.68
+2025-03-18 at 18:09:10 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-18 at 18:09:10 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-18 at 18:09:11 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-18 at 18:09:12 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-18 at 18:09:18 | CRITICAL | Bot stopped!
+2025-03-18 at 18:25:20 | INFO | Bot started successfully!
+2025-03-18 at 18:25:35 | CRITICAL | Bot stopped!
+2025-03-18 at 18:32:49 | INFO | Bot started successfully!
+2025-03-18 at 18:32:57 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-18 at 18:32:57 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-18 at 18:33:10 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-18 at 18:33:22 | CRITICAL | Bot stopped!
+2025-03-18 at 18:35:42 | INFO | Bot started successfully!
+2025-03-18 at 18:35:47 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-18 at 18:35:47 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-18 at 18:35:49 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-18 at 18:35:53 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-18 at 18:35:54 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-18 at 18:35:56 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-18 at 18:36:02 | CRITICAL | Bot stopped!
+2025-03-18 at 19:11:27 | INFO | Bot started successfully!
+2025-03-18 at 19:11:36 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-18 at 19:11:36 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-18 at 19:12:15 | CRITICAL | Bot stopped!
+2025-03-18 at 19:13:55 | INFO | Bot started successfully!
+2025-03-18 at 19:14:07 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-18 at 19:14:07 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-18 at 19:15:47 | CRITICAL | Bot stopped!
+2025-03-18 at 19:16:26 | INFO | Bot started successfully!
+2025-03-18 at 19:16:49 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-18 at 19:16:49 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-18 at 19:17:21 | CRITICAL | Bot stopped!
+2025-03-18 at 19:17:30 | INFO | Bot started successfully!
+2025-03-18 at 19:17:34 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-18 at 19:17:34 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-18 at 19:17:52 | CRITICAL | Bot stopped!
+2025-03-18 at 19:36:40 | INFO | Bot started successfully!
+2025-03-18 at 19:36:45 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-18 at 19:36:45 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-18 at 19:38:19 | CRITICAL | Bot stopped!
+2025-03-18 at 19:38:56 | INFO | Bot started successfully!
+2025-03-18 at 19:38:59 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-18 at 19:38:59 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-18 at 19:40:00 | CRITICAL | Bot stopped!
+2025-03-18 at 19:44:35 | INFO | Bot started successfully!
+2025-03-18 at 19:44:58 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-18 at 19:44:58 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-18 at 19:45:11 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-18 at 19:45:58 | CRITICAL | Bot stopped!
+2025-03-18 at 19:46:05 | INFO | Bot started successfully!
+2025-03-18 at 19:46:09 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-18 at 19:46:09 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-18 at 19:46:44 | CRITICAL | Bot stopped!
+2025-03-18 at 19:49:32 | INFO | Bot started successfully!
+2025-03-18 at 19:49:37 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-18 at 19:49:37 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-18 at 19:49:47 | CRITICAL | Bot stopped!
+2025-03-18 at 19:50:13 | INFO | Bot started successfully!
+2025-03-18 at 19:50:15 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-18 at 19:50:15 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-18 at 19:50:33 | CRITICAL | Bot stopped!
+2025-03-18 at 19:53:36 | INFO | Bot started successfully!
+2025-03-18 at 19:53:45 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-18 at 19:53:45 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-18 at 19:55:13 | CRITICAL | Bot stopped!
+2025-03-18 at 19:55:19 | INFO | Bot started successfully!
+2025-03-18 at 19:55:21 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-18 at 19:55:21 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-18 at 19:57:13 | CRITICAL | Bot stopped!
+2025-03-18 at 19:57:20 | INFO | Bot started successfully!
+2025-03-18 at 19:57:42 | CRITICAL | Bot stopped!
+2025-03-18 at 19:59:36 | INFO | Bot started successfully!
+2025-03-18 at 19:59:41 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-18 at 19:59:41 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-18 at 20:00:01 | CRITICAL | Bot stopped!
+2025-03-18 at 20:05:09 | INFO | Bot started successfully!
+2025-03-18 at 20:06:33 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-18 at 20:06:33 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-18 at 20:06:36 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-18 at 20:06:42 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-18 at 20:07:56 | CRITICAL | Bot stopped!
+2025-03-18 at 20:09:16 | INFO | Bot started successfully!
+2025-03-18 at 20:09:20 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-18 at 20:09:20 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-18 at 20:09:34 | CRITICAL | Bot stopped!
+2025-03-18 at 20:12:17 | INFO | Bot started successfully!
+2025-03-18 at 20:12:22 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-18 at 20:12:22 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-18 at 20:15:44 | CRITICAL | Bot stopped!
+2025-03-18 at 20:16:57 | INFO | Bot started successfully!
+2025-03-18 at 20:16:59 | CRITICAL | Bot stopped!
+2025-03-18 at 20:17:16 | INFO | Bot started successfully!
+2025-03-18 at 20:17:23 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-18 at 20:17:23 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-18 at 20:17:29 | DEBUG | menu:2:add_expense:ЖКХ
+2025-03-18 at 20:17:31 | DEBUG | menu:2:add_expense:Лекарства
+2025-03-18 at 20:17:32 | DEBUG | menu:0:main:
+2025-03-18 at 20:19:11 | CRITICAL | Bot stopped!
+2025-03-18 at 20:19:18 | INFO | Bot started successfully!
+2025-03-18 at 20:19:31 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-18 at 20:19:31 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-18 at 20:19:33 | DEBUG | level=1 menu_name='add_expense' category=None
+2025-03-18 at 20:20:28 | CRITICAL | Bot stopped!
+2025-03-18 at 20:20:33 | INFO | Bot started successfully!
+2025-03-18 at 20:20:36 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-18 at 20:20:36 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-18 at 20:20:37 | DEBUG | level=1 menu_name='add_expense' category=None
+2025-03-18 at 20:20:41 | DEBUG | menu:0:main:
+2025-03-18 at 20:20:43 | DEBUG | menu:0:main:
+2025-03-18 at 20:20:44 | DEBUG | menu:0:main:
+2025-03-18 at 20:20:45 | DEBUG | menu:0:main:
+2025-03-18 at 20:20:46 | DEBUG | menu:0:main:
+2025-03-18 at 20:21:00 | CRITICAL | Bot stopped!
+2025-03-18 at 20:25:28 | INFO | Bot started successfully!
+2025-03-18 at 20:25:33 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-18 at 20:25:33 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-18 at 20:27:37 | CRITICAL | Bot stopped!
+2025-03-18 at 20:27:58 | INFO | Bot started successfully!
+2025-03-18 at 20:28:00 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-18 at 20:28:00 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-18 at 20:28:22 | CRITICAL | Bot stopped!
+2025-03-18 at 20:33:00 | INFO | Bot started successfully!
+2025-03-18 at 20:33:03 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-18 at 20:33:03 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-18 at 20:35:13 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-18 at 20:35:13 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-18 at 20:35:50 | CRITICAL | Bot stopped!
+2025-03-18 at 20:35:55 | INFO | Bot started successfully!
+2025-03-18 at 20:35:59 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-18 at 20:35:59 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-18 at 20:37:00 | CRITICAL | Bot stopped!
+2025-03-18 at 20:38:22 | INFO | Bot started successfully!
+2025-03-18 at 20:38:45 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-18 at 20:38:45 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-18 at 20:38:46 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-18 at 20:38:51 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-18 at 20:39:18 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-18 at 20:39:24 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-18 at 20:39:58 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-18 at 20:39:58 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-18 at 20:41:06 | CRITICAL | Bot stopped!
+2025-03-18 at 20:41:11 | INFO | Bot started successfully!
+2025-03-18 at 20:41:13 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-18 at 20:41:13 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-18 at 20:41:17 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-18 at 20:41:23 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-18 at 20:41:25 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-18 at 20:41:34 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-18 at 20:41:35 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-18 at 20:41:37 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-18 at 20:41:41 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-18 at 20:47:21 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-18 at 20:47:36 | CRITICAL | Bot stopped!
+2025-03-19 at 20:44:19 | INFO | Bot started successfully!
+2025-03-19 at 20:46:01 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-19 at 20:46:01 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-19 at 20:48:34 | CRITICAL | Bot stopped!
+2025-03-19 at 20:52:11 | INFO | Bot started successfully!
+2025-03-19 at 20:52:14 | CRITICAL | Bot stopped!
+2025-03-19 at 20:52:20 | INFO | Bot started successfully!
+2025-03-19 at 20:52:29 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-19 at 20:52:29 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-19 at 20:58:37 | CRITICAL | Bot stopped!
+2025-03-19 at 20:59:29 | INFO | Bot started successfully!
+2025-03-19 at 20:59:33 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-19 at 20:59:33 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-19 at 21:00:07 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-19 at 21:00:16 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-19 at 21:00:21 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-19 at 21:00:28 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-19 at 21:00:30 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-19 at 21:00:32 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-19 at 21:00:32 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-19 at 21:00:35 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-19 at 21:01:14 | CRITICAL | Bot stopped!
+2025-03-19 at 21:05:02 | INFO | Bot started successfully!
+2025-03-19 at 21:05:05 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-19 at 21:05:05 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-19 at 21:05:53 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-19 at 21:05:55 | CRITICAL | Bot stopped!
+2025-03-19 at 21:37:36 | INFO | Bot started successfully!
+2025-03-19 at 21:37:40 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-19 at 21:37:40 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-19 at 21:38:03 | CRITICAL | Bot stopped!
+2025-03-21 at 17:45:49 | INFO | Bot started successfully!
+2025-03-21 at 17:46:00 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-21 at 17:46:00 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-21 at 17:46:08 | DEBUG | 2025-03-21 14:46:07+00:00
+2025-03-21 at 17:47:03 | CRITICAL | Bot stopped!
+2025-03-21 at 17:47:19 | INFO | Bot started successfully!
+2025-03-21 at 17:47:20 | CRITICAL | Bot stopped!
+2025-03-21 at 17:51:45 | INFO | Bot started successfully!
+2025-03-21 at 17:51:58 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-21 at 17:51:58 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-21 at 17:52:08 | DEBUG | 14:52:09+00:00
+2025-03-21 at 17:52:25 | CRITICAL | Bot stopped!
+2025-03-21 at 17:57:27 | INFO | Bot started successfully!
+2025-03-21 at 17:57:32 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-21 at 17:57:32 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-21 at 17:57:41 | DEBUG | 2025-03-21 17:57:41.737731
+2025-03-21 at 17:58:25 | CRITICAL | Bot stopped!
+2025-03-21 at 18:10:40 | INFO | Bot started successfully!
+2025-03-21 at 18:10:44 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-21 at 18:10:44 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-21 at 18:10:54 | DEBUG | Added new income/expense for user with telegram_id = 7569874655
+2025-03-21 at 18:15:37 | CRITICAL | Bot stopped!
+2025-03-21 at 18:19:09 | INFO | Bot started successfully!
+2025-03-21 at 18:19:14 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-21 at 18:19:14 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-21 at 18:19:25 | DEBUG | Added new income/expense for user with telegram_id = 7569874655
+2025-03-21 at 18:24:28 | CRITICAL | Bot stopped!
+2025-03-21 at 18:25:39 | INFO | Bot started successfully!
+2025-03-21 at 18:25:46 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-21 at 18:25:46 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-21 at 18:27:01 | CRITICAL | Bot stopped!
+2025-03-21 at 18:31:03 | INFO | Bot started successfully!
+2025-03-21 at 18:31:47 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-21 at 18:31:47 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-21 at 18:35:04 | CRITICAL | Bot stopped!
+2025-03-21 at 18:35:21 | INFO | Bot started successfully!
+2025-03-21 at 18:35:25 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-21 at 18:35:25 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-21 at 18:35:35 | CRITICAL | Bot stopped!
+2025-03-21 at 18:36:41 | INFO | Bot started successfully!
+2025-03-21 at 18:36:46 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-21 at 18:36:46 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-21 at 18:37:18 | CRITICAL | Bot stopped!
+2025-03-21 at 18:49:07 | INFO | Bot started successfully!
+2025-03-21 at 18:49:14 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-21 at 18:49:14 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-21 at 18:49:44 | CRITICAL | Bot stopped!
+2025-03-21 at 18:51:49 | INFO | Bot started successfully!
+2025-03-21 at 18:51:53 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-21 at 18:51:54 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-21 at 18:52:13 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-21 at 18:52:13 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-21 at 18:52:33 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-21 at 18:52:51 | CRITICAL | Bot stopped!
+2025-03-21 at 19:02:06 | INFO | Bot started successfully!
+2025-03-21 at 19:04:23 | CRITICAL | Bot stopped!
+2025-03-21 at 19:13:31 | INFO | Bot started successfully!
+2025-03-21 at 19:13:32 | CRITICAL | Bot stopped!
+2025-03-21 at 19:16:47 | INFO | Bot started successfully!
+2025-03-21 at 19:16:50 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-21 at 19:16:50 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-21 at 19:16:58 | CRITICAL | Bot stopped!
+2025-03-21 at 19:17:10 | INFO | Bot started successfully!
+2025-03-21 at 19:17:34 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-21 at 19:17:34 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-21 at 19:18:16 | CRITICAL | Bot stopped!
+2025-03-21 at 19:18:36 | INFO | Bot started successfully!
+2025-03-21 at 19:18:40 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-21 at 19:18:40 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-21 at 19:18:41 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-21 at 19:18:44 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-21 at 19:18:45 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-21 at 19:18:55 | CRITICAL | Bot stopped!
+2025-03-21 at 19:19:53 | INFO | Bot started successfully!
+2025-03-21 at 19:19:56 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-21 at 19:19:56 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-21 at 19:19:58 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-21 at 19:21:23 | CRITICAL | Bot stopped!
+2025-03-21 at 19:23:54 | INFO | Bot started successfully!
+2025-03-21 at 19:23:58 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-21 at 19:24:03 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-21 at 19:24:03 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-21 at 19:24:05 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-21 at 19:24:17 | CRITICAL | Bot stopped!
+2025-03-21 at 19:25:18 | INFO | Bot started successfully!
+2025-03-21 at 19:25:35 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-21 at 19:25:35 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-21 at 19:25:41 | CRITICAL | Bot stopped!
+2025-03-21 at 19:26:44 | INFO | Bot started successfully!
+2025-03-21 at 19:26:47 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-21 at 19:26:47 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-21 at 19:27:06 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-21 at 19:27:37 | DEBUG | Added new income/expense for user with telegram_id = 7569874655
+2025-03-21 at 19:29:11 | CRITICAL | Bot stopped!
+2025-03-21 at 19:32:47 | INFO | Bot started successfully!
+2025-03-21 at 19:33:38 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-21 at 19:33:39 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-21 at 19:33:42 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-21 at 19:33:44 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-21 at 19:33:45 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-21 at 19:33:50 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-21 at 19:33:55 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-21 at 19:33:57 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-21 at 19:33:59 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-21 at 19:34:01 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-21 at 19:34:15 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-21 at 19:34:16 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-21 at 19:35:19 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-21 at 19:35:28 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-21 at 19:35:36 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-21 at 19:35:38 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-21 at 19:35:40 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-21 at 19:35:49 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-21 at 19:35:49 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-21 at 19:36:16 | DEBUG | User with telegram_id=755919498 clicked menu button
+2025-03-21 at 19:38:03 | CRITICAL | Bot stopped!
+2025-03-21 at 19:42:21 | INFO | Bot started successfully!
+2025-03-21 at 19:42:23 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-21 at 19:42:23 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-21 at 19:42:25 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-21 at 19:42:25 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-21 at 19:42:31 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-21 at 19:42:31 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-21 at 19:42:32 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-21 at 19:42:32 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-21 at 19:42:52 | CRITICAL | Bot stopped!
+2025-03-21 at 19:43:35 | INFO | Bot started successfully!
+2025-03-21 at 19:43:42 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-21 at 19:43:42 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-21 at 19:43:43 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-21 at 19:43:44 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-21 at 19:43:45 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-21 at 19:43:45 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-21 at 19:43:47 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-21 at 19:43:48 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-21 at 19:43:49 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-21 at 19:43:49 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-21 at 19:43:50 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-21 at 19:43:51 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-21 at 19:43:52 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-21 at 19:43:52 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-21 at 19:43:54 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-21 at 19:43:54 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-21 at 19:44:10 | DEBUG | Added new income/expense for user with telegram_id = 7569874655
+2025-03-21 at 19:44:12 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-21 at 19:44:56 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-21 at 19:45:05 | CRITICAL | Bot stopped!
+2025-03-21 at 19:45:49 | INFO | Bot started successfully!
+2025-03-21 at 19:45:52 | DEBUG | User with telegram_id=755919498 used command /start
+2025-03-21 at 19:45:52 | DEBUG | User with telegram_id=755919498 already exists in Users
+2025-03-21 at 19:46:10 | DEBUG | Added new income/expense for user with telegram_id = 7569874655
+2025-03-21 at 19:48:32 | CRITICAL | Bot stopped!
